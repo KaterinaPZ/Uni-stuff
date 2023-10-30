@@ -1,6 +1,17 @@
 # Git commands
 - git commit - new commit
-- git branch [name] - makes nea branch
+- git branch [name] - makes new branch
 - git checkout [name] - goes to that branch
 - git checkout -b [name] - creates new branch and goes to it
 - git merge [name] - /name of the branch we want main to be merged with/ - Merging in Git creates a special commit that has two unique parents
+- git rebase [name] - Rebasing essentially takes a set of commits, "copies" them, and plops them down somewhere else -/if we rebase main we need to move the main to the branch with rebase/
+- HEAD is the symbolic name for the currently checked out commit -- it's essentially what commit you're working on top of. HEAD always points to the most recent commit which is reflected in the working tree. Normally HEAD points to a branch name (like bugFix). When you commit, the status of bugFix is altered and this change is visible through HEAD
+- git checkout [branch hash name] - detach head
+- git log - see hashes
+- git checkout main^ -the first parent of main / ^ - Moving upwards one commit at a time with / - moves HEAD
+- git checkout HEAD~4 - ~<num> - Moving upwards a number of times with
+- git branch -f main HEAD~3 - moves (by force) the main branch to three parents behind HEAD
+- git reset - reverses changes by moving a branch reference backwards in time to an older commit - will move a branch backwards as if the commit had never been made in the first place.        both HEAD MUST BE ON IT - git reset HEAD~1 / removes 1/
+- git revert - In order to reverse changes and share those reversed changes with others - With reverting, you can push out your changes to share with others - git revert HEAD
+- git cherry-pick <Commit1> <Commit2> <...>
+- 
