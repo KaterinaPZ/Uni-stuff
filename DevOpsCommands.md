@@ -1,5 +1,6 @@
 # Git commands
-```git commit ```- new commit
+```git commit ```
+new commit
 - git branch [name] - makes new branch
 - git checkout [name] - goes to that branch
 - git checkout -b [name] - creates new branch and goes to it
