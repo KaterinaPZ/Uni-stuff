@@ -127,3 +127,7 @@ docker container rm [name]
 ```
 docker image rm [IMAGE ID]
 ```
+```
+cloudshell_open --repo_url
+```
+
