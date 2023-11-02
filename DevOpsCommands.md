@@ -3,6 +3,22 @@
 ```
 git commit 
 ```
+- Update remote refs along with associated objects
+```
+git push
+```
+- clone a repository into a new directory
+```
+git clone [repo link]
+```
+-without arguments will update all the remote-tracking branches
+```
+git fetch
+```
+- without arguments will in addition merge the remote master branch into the current master branch
+```
+git pull
+```
 - makes new branch
 ```
 git branch [name]
