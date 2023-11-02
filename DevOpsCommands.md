@@ -3,9 +3,18 @@
 ```
 git commit 
 ```
-- git branch [name] - makes new branch
-- git checkout [name] - goes to that branch
-- git checkout -b [name] - creates new branch and goes to it
+- makes new branch
+```
+ git branch [name]
+```
+- goes to that branch
+```
+ git checkout [name]
+```
+- creates new branch and goes to it
+```
+git checkout -b [name]
+``` 
 - git merge [name] - /name of the branch we want main to be merged with/ - Merging in Git creates a special commit that has two unique parents
 - git rebase [name] - Rebasing essentially takes a set of commits, "copies" them, and plops them down somewhere else -/if we rebase main we need to move the main to the branch with rebase/
 - HEAD is the symbolic name for the currently checked out commit -- it's essentially what commit you're working on top of. HEAD always points to the most recent commit which is reflected in the working tree. Normally HEAD points to a branch name (like bugFix). When you commit, the status of bugFix is altered and this change is visible through HEAD
