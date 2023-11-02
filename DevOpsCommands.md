@@ -1,5 +1,7 @@
 # Git commands
-```git commit ```
+```
+git commit 
+```
 
 new commit
 - git branch [name] - makes new branch
