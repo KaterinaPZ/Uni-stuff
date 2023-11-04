@@ -1,4 +1,10 @@
 # Git commands
+```
+git add .
+git commit -m "[massege]"
+git status
+git push
+```
 - new commit
 ```
 git commit 
