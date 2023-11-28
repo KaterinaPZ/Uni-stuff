@@ -22,3 +22,49 @@ read() се опитва да прочете до брой байтове [count
 
 - EAGAIN - Файловият дескриптор fd се отнася до файл, различен от сокет и е маркиран като неблокиращ (O_NONBLOCK), и четенето ще блокира.
 - 
+
+# write
+
+# close
+
+# open
+
+# lseek
+
+# pipe
+
+# mkfifo
+
+# stat
+
+# chmod
+
+# chown
+
+# unmask
+
+# utime
+
+# fcntl
+
+# dup
+
+# link
+
+# symlink
+
+# unlink
+
+# mkdir
+
+# rmdir
+
+# chdir
+
+# opendir
+
+# readdir
+
+# closedir
+
+# rewinddir
