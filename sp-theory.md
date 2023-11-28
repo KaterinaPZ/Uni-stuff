@@ -21,50 +21,113 @@ read() се опитва да прочете до брой байтове [count
 ## грешки
 
 - EAGAIN - Файловият дескриптор fd се отнася до файл, различен от сокет и е маркиран като неблокиращ (O_NONBLOCK), и четенето ще блокира.
-- 
+- EAGAIN or EWOULDBLOCK
+- EBADF
+- EFAULT
+- EINTR
+- EINVAL
+- EINVAL
+- EIO
+- EISDIR - файловия дескриптор fd сочи към директория
 
 # write
+ssize_t write(int fd, const void buf[.count], size_t count);
 
 # close
+int close(int fd);
 
 # open
+int open(const char *pathname, int flags);
+int open(const char *pathname, int flags, mode_t mode);
 
 # lseek
+off_t lseek(int fd, off_t offset, int whence);
 
 # pipe
+int pipe(int pipefd[2]);
 
 # mkfifo
+int mkfifo(const char *pathname, mode_t mode);
 
 # stat
+int stat(const char *restrict pathname, struct stat *restrict statbuf);
 
 # chmod
+int chmod(const char *pathname, mode_t mode);
 
 # chown
+int chown(const char *pathname, uid_t owner, gid_t group);
 
 # unmask
+mode_t umask(mode_t mask);
 
 # utime
+int utime(const char *filename, const struct utimbuf *_Nullable times);
 
 # fcntl
+int fcntl(int fd, int cmd, ... /* arg */ );
 
 # dup
+int dup(int oldfd);
 
 # link
+int link(const char *oldpath, const char *newpath);
 
 # symlink
+int symlink(const char *target, const char *linkpath);
 
 # unlink
+int unlink(const char *pathname);
 
 # mkdir
+int mkdir(const char *pathname, mode_t mode);
 
 # rmdir
+int rmdir(const char *pathname);
 
 # chdir
+int chdir(const char *path);
 
 # opendir
+DIR *opendir(const char *name);
 
 # readdir
+struct dirent *readdir(DIR *dirp);v
 
 # closedir
+int closedir(DIR *dirp);
 
 # rewinddir
+void rewinddir(DIR *dirp);
+
+# fork
+
+# exit
+
+# atexit
+
+# wait
+
+# exec
+
+# getpid
+
+# getppid
+
+# signal
+
+# kill
+
+# pause
+
+# alarm
+
+# socket
+
+# connect
+
+# bind
+
+# listen 
+
+# accept
