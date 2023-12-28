@@ -24,6 +24,7 @@ The following process describes how you as a customer and your custom applicatio
     The alert is sent in the following JSON format.
 
 >  <> **Sample Code**
+> 
 > ```
 >  {  
 > "type":  "PROBLEM", 
