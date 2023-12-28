@@ -46,7 +46,7 @@ The following process describes how you as a customer and your custom applicatio
 >
 >When the alert is for a default or custom metric of a Java application ("resourceType": "APPLICATION"), the JSON also includes the process ID. The alerts for the other resource types don’t include the process ID.
 
->**Sample Code**
+> <> **Sample Code**
 >
 >```
 >{
