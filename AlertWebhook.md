@@ -24,6 +24,7 @@ The following process describes how you as a customer and your custom applicatio
     The alert is sent in the following JSON format.
 
 >  <> **Sample Code**
+> ```
 >  {  
 > "type":  "PROBLEM", 
 >  "metric":  "My metric name", 
@@ -31,13 +32,14 @@ The following process describes how you as a customer and your custom applicatio
 >   "date":  "Fri April 03 12:23:05 UTC 2020",  
 >   "output":  "JMX WARNING - Value = 2",  
 >   "resourceType":  "APPLICATION",
->     "resource":  {  
+>     "resource":
+>     {  
 >     "application":  "myapp",  
 >     "processId":  "9b255a3770c332615f911c09b503eceaf9c1d0b8", 
 >      "account":  "mysubaccount" 
 >      }  
->      }
->     
+>   }
+> ```    
 >
 >The  resourceType  value  APPLICATION,  DATABASE,  XS_APPLICATION, or  HTML5_APPLICATION  defines if the alert is respectively for a Java application, database, SAP HANA XS application, or HTML5 application.
 >
