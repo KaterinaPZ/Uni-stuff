@@ -8,21 +8,19 @@ The following process describes how you as a customer and your custom applicatio
 ![This is a diagram showing the process flow for the alert webhook functionality.](https://help.sap.com/doc/64f7d2b06c6b40a9b3097860c5930641/Cloud/en-US/loio780b39b5c5344724accf2e497c10e49a_LowRes.png
 "This is a diagram showing the process flow for the alert webhook functionality")
 
-1. You set the application URL for the alerts when creating a Webhook alert channel via the SAP BTP cockpit or with a POST REST call to the SAP Monitoring service.
-
-2.  You set the application URL for the alerts when creating a  Webhook  alert channel via the  SAP BTP  cockpit  or with a POST REST call to the  SAP Monitoring service.
+1.  You set the application URL for the alerts when creating a  Webhook  alert channel via the  SAP BTP  cockpit  or with a POST REST call to the  SAP Monitoring service.
     
-3.  You retrieve the verification token either from the  Details  column in the  SAP BTP  cockpit  or from the REST call response.
+2.  You retrieve the verification token either from the  Details  column in the  SAP BTP  cockpit  or from the REST call response.
     
-4.  You store the verification token in your custom application.
+3.  You store the verification token in your custom application.
     
-5.  When the  SAP Monitoring service  receives an alert, it sends a GET request to the custom application URL for the verification token.
+4.  When the  SAP Monitoring service  receives an alert, it sends a GET request to the custom application URL for the verification token.
     
-6.  The custom application responds to the GET request.
+5.  The custom application responds to the GET request.
     
     The custom application responds with a status code  200 OK  by sending the verification token as plain text.
     
-7.  The  SAP Monitoring service  verifies the token, and then sends the alert to the custom application URL using a POST REST call.
+6.  The  SAP Monitoring service  verifies the token, and then sends the alert to the custom application URL using a POST REST call.
     
     The alert is sent in the following JSON format.
 
