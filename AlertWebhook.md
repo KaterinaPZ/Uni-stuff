@@ -8,6 +8,8 @@ The following process describes how you as a customer and your custom applicatio
 ![This is a diagram showing the process flow for the alert webhook functionality.](https://help.sap.com/doc/64f7d2b06c6b40a9b3097860c5930641/Cloud/en-US/loio780b39b5c5344724accf2e497c10e49a_LowRes.png
 "This is a diagram showing the process flow for the alert webhook functionality")
 
+1. You set the application URL for the alerts when creating a Webhook alert channel via the SAP BTP cockpit or with a POST REST call to the SAP Monitoring service.
+
 2.  You set the application URL for the alerts when creating a  Webhook  alert channel via the  SAP BTP  cockpit  or with a POST REST call to the  SAP Monitoring service.
     
 3.  You retrieve the verification token either from the  Details  column in the  SAP BTP  cockpit  or from the REST call response.
