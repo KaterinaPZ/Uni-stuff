@@ -139,7 +139,7 @@ Set the application URL for the alerts by using a POST REST call to the  SAP Mon
 >                  }
 > ```
 
-Related Information
+### Related Information
 
 [Receiving Alerts in the Corporate On-Premise System![Information published on SAP site](https://help.sap.com/doc/64f7d2b06c6b40a9b3097860c5930641/Cloud/en-US/themes/sap-light/img/sap_link.png "Information published on SAP site")](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fblogs.sap.com%2F2018%2F09%2F17%2Freceiving-alerts-in-the-corporate-on-premise-system%2F "Learn how to receive alerts locally in your on-premise system.")
 
