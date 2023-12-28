@@ -112,30 +112,32 @@ Set the application URL for the alerts by using a POST REST call to the  SAP Mon
 
 -   If the custom application URL is protected with OAuth 2.0, include the following in the body of the POST request.
     
-   > **Sample Code**
-  > 
-  >  { 
-  >   "url":  "https://customURL.com/alias", 
-  >    "authentication":  
-  >    { 
-  >     "authenticationType":  "oauth2",  
-  >     "client":  "asdfjasdljfasdkjf", 
-  >      "secret":  "w7d65as4d1as0das7",
-  >        "oAuthServerUrl": "https://customServerURL.com/o/oauth2/auth" 
-  >         }  
-  >         }
+> **Sample Code**
+>
+> ```
+> {
+>  "url": "https://customURL.com/alias",
+>  "authentication": {
+>                      "authenticationType": "oauth2",
+>                      "client": "asdfjasdljfasdkjf",
+>                      "secret": "w7d65as4d1as0das7",
+>                      "oAuthServerUrl": "https://customServerURL.com/o/oauth2/auth"
+>                    }
+> }
+> ```
+
     
 -   If the custom application URL is protected with credentials, include the following in the body of the POST request.
     
- >   **Sample Code**
- >    
-   > "authentication":  
-   > {  
-   > "authenticationType":  "basic",  
-   > "user":  "yourUser",  
-   > "password":  "123456" 
-   >  }
-    
+>   **Sample Code**
+>
+> ```   
+> "authentication": {
+>                     "authenticationType": "basic",
+>                     "user": "yourUser",
+>                     "password": "123456"
+>                  }
+> ```
 
 Related Information
 
@@ -144,5 +146,3 @@ Related Information
 [Availability Checks](https://help.sap.com/docs/monitoring-service/sap-monitoring-service-for-sap-btp/availability-checks "Create an availability check for a Java or an SAP HANA XS application to track if the application is available and to receive alerts for it.")
 
 Written with [StackEdit](https://stackedit.io/).
-
- - List item
