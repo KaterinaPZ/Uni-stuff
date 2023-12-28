@@ -1,4 +1,4 @@
-`` {  
+``` {  
  "type":  "PROBLEM", 
   "metric":  "My metric name", 
    "state":  "WARNING",  
@@ -11,4 +11,4 @@
       "account":  "mysubaccount" 
       }  
       }
-``  
+``` 
