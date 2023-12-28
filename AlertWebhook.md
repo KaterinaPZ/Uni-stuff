@@ -38,7 +38,7 @@ The following process describes how you as a customer and your custom applicatio
 >    "processId": "9b255a3770c332615f911c09b503eceaf9c1d0b8",
 >    "account": "mysubaccount"
 >  }
-}
+> }
 > ```    
 >
 >The  resourceType  value  APPLICATION,  DATABASE,  XS_APPLICATION, or  HTML5_APPLICATION  defines if the alert is respectively for a Java application, database, SAP HANA XS application, or HTML5 application.
