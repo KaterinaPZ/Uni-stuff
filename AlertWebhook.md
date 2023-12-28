@@ -47,19 +47,20 @@ The following process describes how you as a customer and your custom applicatio
 
 >**Sample Code**
 >
->{  
->"type":  "PROBLEM", 
-> "metric":  "Availability Check", 
->  "state":  "CRITICAL",  
->  "date":  "Thu Sep 20 12:08:20 UTC 2018", 
->   "output":  "CRITICAL: HTTP Status Code: 503 Response size: 222B Response time: 0.019s",
->     "resourceType":  "APPLICATION", 
->      "resource": 
->       {  
->       "application":"myapp",  
->         "account":   "mysubaccount" 
->          }  
->          }
+>```
+>{
+> "type": "PROBLEM",
+>  "metric": "Availability Check",
+>  "state": "CRITICAL",
+>  "date": "Thu Sep 20 12:08:20 UTC 2018",
+>  "output": "CRITICAL: HTTP Status Code: 503 Response size: 222B Response time: 0.019s",
+>  "resourceType": "APPLICATION",
+>  "resource": {
+>    "application": "myapp",
+>    "account": "mysubaccount"
+>  }
+> }
+>```
 
 >**Caution**
 >
